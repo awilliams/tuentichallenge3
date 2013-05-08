@@ -1,6 +1,6 @@
-I tried solving this problem using [A* search](http://en.wikipedia.org/wiki/A*_search_algorithm)
+#### I tried solving this problem using [A* search](http://en.wikipedia.org/wiki/A*_search_algorithm).
 
-It basically boiled down to this method which I'll explain below
+It basically boiled down to this method which I'll explain further below
 ````ruby
 def search
   initial_path = Path.new(self.board, [self.start_position], 0.0, self.new_position_cost, self.movement_cost)
@@ -10,7 +10,6 @@ def search
     min_value_paths = @open_paths.select { |path| path.heuristic_value == min_value }
     @open_paths -= min_value_paths
     @open_paths += min_value_paths.map { |path| path.unexplored_paths }.flatten
-
   end
   @open_paths.select{ |path| path.position == self.exit_position}.min_by { |path| path.value }
 end
