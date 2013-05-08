@@ -1,4 +1,4 @@
-tuentichallenge3
+[#TuentiChallenge3](https://twitter.com/search/realtime?q=%23tuentichallenge3)
 ================
 
-Selected writeups of my solutions toTuenti's #TuentiChallenge3
+Selected writeups of my solutions to Tuenti's #TuentiChallenge3
